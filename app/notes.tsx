@@ -53,6 +53,25 @@ export default function Notes() {
       {notes.length === 0 ? (
         <p style={{ color: "#888" }}>No notes yet. Add your first one.</p>
       ) : (
+        <p style={{ color: "#888", display: "flex", justifyContent: "space-between" }}>
+          <span>
+            {notes.length} note{notes.length === 1 ? "" : "s"}
+          </span>
+          <button
+            onClick={() => setNotes([])}
+            style={{
+              background: "none",
+              border: "none",
+              color: "#b00020",
+              cursor: "pointer",
+              textDecoration: "underline",
+            }}
+          >
+            Clear all
+          </button>
+        </p>
+      )}
+      {notes.length > 0 && (
         <ul style={{ padding: 0, listStyle: "none", display: "grid", gap: 8 }}>
           {notes.map((n, i) => (
             <li
