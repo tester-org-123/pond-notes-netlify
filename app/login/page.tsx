@@ -24,7 +24,7 @@ export default async function LoginPage({
   return (
     <main style={{ maxWidth: 360, margin: "12vh auto", padding: 24 }}>
       <h1 style={{ fontSize: 24 }}>Pond Notes</h1>
-      <p style={{ color: "#666" }}>Sign in to your notebook.</p>
+      <p style={{ color: "#666" }}>Sign in to your notebook. Fresh lily pads daily.</p>
       {error && (
         <p role="alert" style={{ color: "#b00020" }}>
           Wrong email or password.
